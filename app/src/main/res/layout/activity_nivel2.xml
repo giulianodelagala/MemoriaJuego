@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Nivel2"
+    android:background="@drawable/fondo">
+
+    <ImageButton
+        android:id="@+id/bt1"
+        android:layout_width="99dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="28dp"
+        android:onClick="Mostrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnivel"
+        app:srcCompat="@mipmap/reverse" />
+
+    <ImageButton
+        android:id="@+id/bt0"
+        android:layout_width="88dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="36dp"
+        android:onClick="Mostrar"
+        app:layout_constraintStart_toEndOf="@+id/bt3"
+        app:layout_constraintTop_toBottomOf="@+id/bt2"
+        app:srcCompat="@mipmap/reverse" />
+
+    <ImageButton
+        android:id="@+id/bt3"
+        android:layout_width="97dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="36dp"
+        android:onClick="Mostrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt1"
+        app:srcCompat="@mipmap/reverse" />
+
+    <ImageButton
+        android:id="@+id/bt2"
+        android:layout_width="90dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="28dp"
+        android:onClick="Mostrar"
+        app:layout_constraintStart_toEndOf="@+id/bt1"
+        app:layout_constraintTop_toBottomOf="@+id/txtpuntaje"
+        app:srcCompat="@mipmap/reverse" />
+
+    <TextView
+        android:id="@+id/txtnivel"
+        android:layout_width="147dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/nivel2"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtpuntaje"
+        android:layout_width="141dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/puntaje"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtnivel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/bt4"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="28dp"
+        android:onClick="Mostrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt3"
+        app:srcCompat="@mipmap/reverse" />
+
+    <ImageButton
+        android:id="@+id/bt5"
+        android:layout_width="95dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:onClick="Mostrar"
+        app:layout_constraintStart_toEndOf="@+id/bt4"
+        app:layout_constraintTop_toBottomOf="@+id/bt0"
+        app:srcCompat="@mipmap/reverse" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
